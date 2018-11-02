@@ -11,7 +11,7 @@
               #customer='ngModel'
               [(ngModel)]="proposal.customer"
       >
-      <div [hidden]="customer.valid || or customer.prisine">
+      <div [hidden]="customer.valid || customer.pristine">
         Customer name is required
       </div>
     </div>
@@ -24,7 +24,7 @@
               #portfolio_url='ngModel'
               [(ngModel)]="proposal.portfolio_url"
       >
-      <div [hidden]="portfolio_url.valid || or portfolio_url.pristine">
+      <div [hidden]="portfolio_url.valid || portfolio_url.pristine">
         A Portfolio URL is required
       </div>
     </div>
@@ -38,7 +38,7 @@
               #portfolio_url='ngModel'
               [(ngModel)]="proposal.tools"
       >
-      <div [hidden]="tools.valid || or tools.pristine">
+      <div [hidden]="tools.valid || tools.pristine">
         A list of tools is required
       </div>
     </div>
@@ -51,7 +51,7 @@
               #portfolio_url='ngModel'
               [(ngModel)]="proposal.estimated_hours"
       >
-      <div [hidden]="estimated_hours.valid || or estimated_hours.pristine">
+      <div [hidden]="estimated_hours.valid || estimated_hours.pristine">
         You need to enter your estimated hours for the project
       </div>
     </div>
@@ -64,7 +64,7 @@
               #portfolio_url='ngModel'
               [(ngModel)]="proposal.hourly_rate"
       >
-      <div [hidden]="hourly_rate.valid || or hourly_rate.pristine">
+      <div [hidden]="hourly_rate.valid || hourly_rate.pristine">
         You need to enter your hourly rate for the project
       </div>
     </div>
@@ -77,7 +77,7 @@
               #portfolio_url='ngModel'
               [(ngModel)]="proposal.weeks_to_complete"
       >
-      <div [hidden]="weeks_to_complete.valid || or weeks_to_complete.pristine">
+      <div [hidden]="weeks_to_complete.valid || weeks_to_complete.pristine">
         You need to enter the weeks you estimate for the project
       </div>
     </div>
