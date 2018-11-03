@@ -2,18 +2,21 @@
    <div class="container">
      <ul class="nav">
        <li class='nav-item'>
-         <a class='nav-link' routerLink="/home">Home</a>
+         <a class='nav-link' routerLink="/home" routerLinkActive
+         ="active">Home</a>
        </li>
        <li class='nav-item'>
-         <a class='nav-link' routerLink="/documents">Docs</a>
+         <a class='nav-link' routerLink="/documents" routerLinkActive
+         ="active">Docs</a>
        </li>
        <li ngbDropdown class='d-inline-block dropdown-links'>
          <button class="btn btn-outline-primary" id="proposalDropdown"
          ngbDropdownToggle>
-           abc
+           Proposals
          </button>
          <div ngbDropdownMenu aria-labelledby="proposalDropdown">
-           <a class='dropdown-item' routerLink="/proposals">Proposal</a>
+           <a class='dropdown-item' routerLink="/proposals" routerLinkActive
+           ="active" [routerLinkActiveOptions="{ exact: true}"]>Proposal</a>
            <a class='dropdown-item' routerLink="/proposal/new">New Proposal</a>
          </div>
        </li>
